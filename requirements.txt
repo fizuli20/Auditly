@@ -1,0 +1,6 @@
+streamlit>=1.36
+pdfplumber>=0.11
+numpy>=1.26
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+sentence-transformers>=3.0
