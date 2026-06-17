@@ -469,12 +469,26 @@ def inject_styles():
             color: var(--pl-ink);
         }
         header[data-testid="stHeader"] {
-            background: rgba(247, 248, 244, .96);
-            border-bottom: 1px solid rgba(216, 222, 213, .7);
+            display: none !important;
+            height: 0 !important;
+        }
+        [data-testid="stToolbar"],
+        [data-testid="stDecoration"],
+        [data-testid="stStatusWidget"],
+        [data-testid="stMainMenu"],
+        [data-testid="stDeployButton"],
+        #MainMenu,
+        footer {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+        }
+        [data-testid="stAppViewContainer"] {
+            margin-top: 0 !important;
         }
         .block-container {
             max-width: 1220px;
-            padding-top: 1.6rem;
+            padding-top: .85rem;
             padding-bottom: 3rem;
         }
         [data-testid="stSidebar"] {
@@ -508,7 +522,7 @@ def inject_styles():
             gap: 1.25rem;
             align-items: end;
             border-bottom: 1px solid var(--pl-line);
-            padding: .35rem 0 1.2rem;
+            padding: .15rem 0 1.2rem;
             margin-bottom: 1rem;
         }
         .pl-brand-row {
